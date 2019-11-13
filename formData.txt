@@ -1,0 +1,1 @@
+{'issueType': 'Jira', 'issueTitle': 'Final Jira Script Test', 'issueAs': 'Build Engineer', 'issueWant': 'To test final modifications to JIRA script', 'issueThat': 'I can resolve BEG-44', 'issueStakeholder': 'owensr', 'issueAssign': True, 'issueSubmit': True, 'csrf_token': 'ImNhMzljNmVhNzc5NTk2MDYzYzU4ZGQzNjdjOTVhMTU2ZTU1MmFiOGUi.Xcxl8A.WthBWBVcAJDcFvncwOutlFnUahc'}

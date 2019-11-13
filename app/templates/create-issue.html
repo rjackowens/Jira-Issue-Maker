@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Create New Issue</h2>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.issueType.label }}<br>
+            {{ form.issueType }}
+        </p>
+        <p>
+            {{ form.issueTitle.label }}<br>
+            {{ form.issueTitle(size=30) }}<br>
+            {% for error in form.issueTitle.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.issueAs.label }}<br>
+            {{ form.issueAs(size=30) }}<br>
+            {% for error in form.issueAs.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.issueWant.label }}<br>
+            {{ form.issueWant(size=30) }}<br>
+            {% for error in form.issueWant.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.issueThat.label }}<br>
+            {{ form.issueThat(size=30) }}<br>
+            {% for error in form.issueThat.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.issueStakeholder.label }}<br>
+            {{ form.issueStakeholder(size=30) }}<br>
+            {% for error in form.issueStakeholder.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>{{ form.issueAssign() }} {{ form.issueAssign.label }}</p>
+        <p>{{ form.issueSubmit() }}</p>
+    </form>
+{% endblock %}

@@ -1,0 +1,1 @@
+{ "update": { }, "fields": { "project": { "id": "12702" }, "summary": "Testing JIRA API 3", "issuetype": { "id": "10003" }, "assignee": { "name": "" }, "reporter": { "name": "owensr" }, "description": "Test description", "customfield_10207": { "name": "", "key": "" } } }
