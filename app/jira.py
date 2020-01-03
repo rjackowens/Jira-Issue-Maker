@@ -46,17 +46,15 @@ def SubmitForm():
     jsonPayload = json.dumps(payloadData)  # Convert Dictionary to JSON
 
     # POST Payload to JIRA
-    jiraEndpoint = "http://jirap.stifel.com:8080/rest/api/latest/issue"
+    jiraEndpoint = "http://jira.xxx.com:5000/rest/api/latest/issue"
     headers = {
-        'Content-Type': "application/json",
+        'Authorization': "Basic b3dlbnNyOkIwMG0zcjRuZyE=",
         'User-Agent': "PostmanRuntime/7.19.0",
         'Accept': "*/*",
         'Cache-Control': "no-cache",
-        'Postman-Token': "aaa05642-d9b4-4c80-b563-c9bc83fd3784,94c8161e-a351-4518-b02d-e1ef047be905",
+        'Postman-Token': "7bff30f2-7416-482b-9fbb-b8d84e3e962b,3097f2c8-3299-426a-94a4-4c7d3d32978f",
         'Host': "jirap.stifel.com:8080",
         'Accept-Encoding': "gzip, deflate",
-        'Content-Length': "386",
-        'Cookie': "JSESSIONID=EA9F024816E7C82FCBD77B2A187290D7; atlassian.xsrf.token=B1TB-VPMQ-5FFS-6XQD_1b57db0c3b28a7305e4bda53ad1361e8320fa0c0_lin",
         'Connection': "keep-alive",
         'cache-control': "no-cache"
         }

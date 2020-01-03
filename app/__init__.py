@@ -6,3 +6,5 @@ app.config.from_object(Config)
 
 from app import routes
 from app import jira
+
+app.run(host="0.0.0.0", port=7000)
